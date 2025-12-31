@@ -3,7 +3,7 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { DiagnosisResult } from "../types";
 
 export const analyzePlantImage = async (base64Image: string): Promise<DiagnosisResult> => {
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  const ai = new GoogleGenAI({ apiKey: "AIzaSyC7yzs-135gcTBkTm2uwMhsWOAssQEC9h0" });
   
   const prompt = `As an expert plant pathologist, analyze this plant image. 
   Identify if there is any disease. 
